@@ -12,7 +12,7 @@
                     <th>Indicador</th>
                     <th>Valor</th>
                     <th>fecha </th>
-                    <th>Acciones </th>
+                    <th>Acciones </th>                   
                 </tr>
             </thead>
             <tbody id="t-body">
@@ -22,9 +22,9 @@
                         <td id = 'indicador'><?= $datos['indicador']; ?></td>
                         <td id = 'valor'><?= $datos['valor']; ?></td>
                         <td id = 'fecha'><?= $datos['fecha_ingreso']; ?></td>
-                        <td><a href="<?= base_url('edit/' . $datos['id']) ?>" class="btn btn-warning" type="button">Editar</a> /
-                            <button class="btn btn-danger" id="btn-delete" data-id="<?=$datos['id']?>"type="button">Borrar</button>
-                        </td>
+                        <td><a href="<?= base_url('edit/' . $datos['id']) ?>" class="btn btn-warning" type="button">Editar</a>
+                        <button class="btn btn-danger btn-delete" id="btn-delete" data-id="<?=$datos['id']?>"type="button">Borrar</button>
+                        </td>            
                     </tr>
                 <?php endforeach; ?> 
             </tbody>

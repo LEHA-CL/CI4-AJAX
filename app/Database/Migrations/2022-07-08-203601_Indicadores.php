@@ -28,10 +28,6 @@ class Indicadores extends Migration
             'fecha_ingreso' => [
                 'type' => 'DATE',
                 'null' => false,
-            ],
-            'fecha_actualizada' => [
-                'type' => 'DATE',
-                'null' => true,
             ]
         ]);
         $this->forge->addKey('id', true);

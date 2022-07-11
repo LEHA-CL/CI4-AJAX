@@ -15,6 +15,7 @@ class Crud extends BaseController
 
         $indicador = new Indicadores;
         $datos = $indicador->orderBy('id','ASC' )->findAll();
+        
         echo json_encode($datos);
     }
     
