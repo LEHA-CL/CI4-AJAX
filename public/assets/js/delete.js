@@ -43,7 +43,7 @@ function recargar(){
              });
           }
           else {
-            $('#t-body').empty();  
+            $('#t-body').empty(); 
           }    
       }
      
